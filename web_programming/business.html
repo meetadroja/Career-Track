@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Business Career Path - Career Treke</title>
+
+<style>
+:root{
+    --primary-color:#2563eb;
+    --accent-color:#1e40af;
+    --card-bg:#ffffff;
+    --bg-color:#f3f4f6;
+    --text-color:#1f2937;
+    --shadow:rgba(0,0,0,0.08);
+}
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:var(--bg-color);
+    color:var(--text-color);
+}
+
+/* Navbar */
+nav{
+    background:white;
+    padding:15px 40px;
+    box-shadow:0 2px 10px var(--shadow);
+}
+
+.logo{
+    margin:0;
+    color:var(--primary-color);
+}
+
+/* Page Layout */
+.career-page{
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* Back Button */
+.back-btn{
+    display:inline-block;
+    margin-bottom:30px;
+    padding:10px 20px;
+    background:var(--primary-color);
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#1e40af;
+}
+
+/* Hero Section */
+.career-hero{
+    text-align:center;
+    background:linear-gradient(135deg, #2563eb, #1e3a8a);
+    color:white;
+    padding:30px 25px;
+    border-radius:12px;
+    margin-bottom:40px;
+}
+
+.hero-img{
+    width:100%;
+    max-height:320px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:25px;
+}
+
+/* Quote Box */
+.quote-box{
+    margin-top:20px;
+    padding:20px;
+    background:#e0e7ff;
+    border-left:5px solid var(--primary-color);
+    border-radius:8px;
+    font-style:italic;
+    color: black;
+}
+
+/* Roadmap */
+.section-title{
+    margin-bottom:20px;
+}
+
+.roadmap-container{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.roadmap-item{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+    background:var(--card-bg);
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px var(--shadow);
+    border-left:6px solid var(--primary-color);
+    transition:0.3s;
+}
+
+.roadmap-item:hover{
+    transform:translateX(10px);
+}
+
+.step-badge{
+    background:var(--primary-color);
+    color:white;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.step-img{
+    width:85px;
+    height:85px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.step-details h3{
+    margin:0 0 8px;
+}
+
+.step-details p{
+    margin:0;
+    line-height:1.7;
+    opacity:0.9;
+}
+
+/* Skills Section */
+.skills-needed{
+    margin-top:50px;
+    padding:30px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 12px var(--shadow);
+}
+
+.skills-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:15px;
+}
+
+.skill-tag{
+    padding:8px 16px;
+    border-radius:25px;
+    border:1px solid var(--primary-color);
+    font-size:0.9rem;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .roadmap-item{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1 class="logo">Career Treke</h1>
+</nav>
+
+<div class="career-page">
+
+<a href="index.html" class="back-btn">← Back to Career Paths</a>
+
+<div class="career-hero">
+    <h1>Business Career Path</h1>
+    <img src="images/business-hero.jpg" alt="Business Career" class="hero-img">
+    <p>
+        Business is about creating value, managing organizations, and driving economic growth. 
+        Professionals in business lead companies, develop strategies, manage finances, 
+        and build innovative solutions for global markets.
+    </p>
+
+    <div class="quote-box">
+        “Business transforms ideas into opportunities that shape the economy.”
+    </div>
+</div>
+
+<h2 class="section-title">Your Business Career Roadmap</h2>
+
+<div class="roadmap-container">
+
+<div class="roadmap-item">
+    <div class="step-badge">1</div>
+    <img src="images/business-school.jpg" class="step-img">
+    <div class="step-details">
+        <h3>Academic Foundation (School Level)</h3>
+        <p>
+            Focus on Economics, Mathematics, and Commerce. Develop communication 
+            skills, leadership abilities, and participate in business clubs 
+            or entrepreneurship competitions.
+        </p>
+    </div>
+</div>
+
+<div class="roadmap-item">
+    <div class="step-badge">2</div>
+    <img src="images/business-degree.jpg" class="step-img">
+    <div class="step-details">
+        <h3>Undergraduate Business Degree</h3>
+        <p>
+            Pursue BBA, B.Com, or related degrees in Finance, Marketing, 
+            Human Resources, or International Business. Gain knowledge 
+            in management, accounting, and strategic planning.
+        </p>
+    </div>
+</div>
+
+<div class="roadmap-item">
+    <div class="step-badge">3</div>
+    <img src="images/business-internship.jpg" class="step-img">
+    <div class="step-details">
+        <h3>Internships & Corporate Exposure</h3>
+        <p>
+            Gain real-world experience through internships in corporate firms, 
+            startups, banks, or consulting companies. Learn teamwork, 
+            market analysis, and operational processes.
+        </p>
+    </div>
+</div>
+
+<div class="roadmap-item">
+    <div class="step-badge">4</div>
+    <img src="images/business-job.jpg" class="step-img">
+    <div class="step-details">
+        <h3>Entry-Level Professional Role</h3>
+        <p>
+            Begin as a marketing executive, financial analyst, HR executive, 
+            or operations associate. Develop industry knowledge and 
+            problem-solving expertise.
+        </p>
+    </div>
+</div>
+
+<div class="roadmap-item">
+    <div class="step-badge">5</div>
+    <img src="images/business-certification.jpg" class="step-img">
+    <div class="step-details">
+        <h3>Advanced Skills & Certifications</h3>
+        <p>
+            Enhance your profile with certifications like MBA, CFA, Digital Marketing, 
+            Data Analytics, or Project Management to expand your leadership potential.
+        </p>
+    </div>
+</div>
+
+<div class="roadmap-item">
+    <div class="step-badge">6</div>
+    <img src="images/business-leadership.jpg" class="step-img">
+    <div class="step-details">
+        <h3>Leadership & Entrepreneurship</h3>
+        <p>
+            Advance to managerial roles, strategic leadership, or start your own business. 
+            Lead teams, manage growth strategies, and drive innovation in the marketplace.
+        </p>
+    </div>
+</div>
+
+</div>
+
+<div class="skills-needed">
+<h3>Core Competencies for Business Professionals</h3>
+<div class="skills-list">
+<span class="skill-tag">Leadership</span>
+<span class="skill-tag">Strategic Thinking</span>
+<span class="skill-tag">Financial Analysis</span>
+<span class="skill-tag">Marketing Skills</span>
+<span class="skill-tag">Communication</span>
+<span class="skill-tag">Negotiation</span>
+<span class="skill-tag">Decision Making</span>
+<span class="skill-tag">Entrepreneurship</span>
+<span class="skill-tag">Networking</span>
+<span class="skill-tag">Adaptability</span>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

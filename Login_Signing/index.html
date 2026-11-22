@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Login Form -->
+    <div id="loginForm">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Enter Email">
+        <input type="password" id="loginPassword" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
+        <div class="link" onclick="showForgot()">Forgot Password?</div>
+        <div class="link" onclick="showSignup()">Don't have account? Sign Up</div>
+    </div>
+
+    <!-- Signup Form -->
+    <div id="signupForm" class="hidden">
+        <h2>Sign Up</h2>
+        <input type="text" id="signupName" placeholder="Full Name">
+        <input type="email" id="signupEmail" placeholder="Email">
+        <input type="password" id="signupPassword" placeholder="Password">
+        <button onclick="signup()">Sign Up</button>
+        <div class="link" onclick="showLogin()">Already have account? Login</div>
+    </div>
+
+    <!-- Forgot Password -->
+    <div id="forgotForm" class="hidden">
+        <h2>Forgot Password</h2>
+        <input type="email" id="forgotEmail" placeholder="Enter Registered Email">
+        <button onclick="resetPassword()">Reset Password</button>
+        <div class="link" onclick="showLogin()">Back to Login</div>
+    </div>
+
+    <div id="message" class="message"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Treke - Discover Your Future Path</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Career Track</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#careers">Career Paths</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#quiz">Career Quiz</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav_last">
+                <div class="login_container">
+                    <a href="../Login_Signing/index.html" id="Login_Signing">Login</a>
+                </div>
+            <button id="theme-toggle">🌙</button> <!-- Dark/Light mode toggle -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="hero">
+            <h1>Career Track – Discover Your Future Path</h1>
+            <p>Your ultimate guide to exploring careers, building skills, and mapping your journey to success.</p>
+            <div class="cta-buttons">
+                <button onclick="scrollToSection('careers')">Explore Careers</button>
+                <button onclick="scrollToSection('quiz')">Get Guidance</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Paths Section -->
+    <section id="careers" class="section">
+        <h2>Explore Career Paths</h2>
+        <div class="career-cards">
+            <div class="card" data-career="engineering">
+                <h3>Engineering</h3>
+                <p>Design and innovate in fields like mechanical, civil, or software engineering.</p>
+                <button onclick="window.location.href='engineering.html'">View Roadmap</button>
+            </div>
+            <div class="card" data-career="medical">
+                <h3>Medical</h3>
+                <p>Help others through healthcare roles like doctor, nurse, or pharmacist.</p>
+                <button onclick="window.location.href='medical.html'">View Roadmap</button>
+            </div>
+            <div class="card" data-career="it">
+                <h3>IT</h3>
+                <p>Work with technology, cybersecurity, and software development.</p>
+                <button onclick="window.location.href='it.html'">View Roadmap</button>
+            </div>
+            <div class="card" data-career="design">
+                <h3>Design</h3>
+                <p>Create visuals, UX/UI, or graphic designs for brands and media.</p>
+                <button onclick="window.location.href='design.html'">View Roadmap</button>
+            </div>
+            <div class="card" data-career="government">
+                <h3>Government Jobs</h3>
+                <p>Public service roles in administration, law, or defense.</p>
+                <button onclick="window.location.href='government.html'">View Roadmap</button>
+            </div>
+            <div class="card" data-career="business">
+                <h3>Business</h3>
+                <p>Manage operations, finance, or entrepreneurship ventures.</p>
+                <button onclick="window.location.href='business.html'">View Roadmap</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Roadmap Section (Hidden initially, shown on selection) -->
+    <!-- <section id="roadmap" class="section hidden">
+        <h2>Career Roadmap</h2>
+        <div id="roadmap-content">
+            Content populated by JS -->
+        <!-- </div>
+    </section> -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Trending Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Coding</h3>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>AI</h3>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>Data Science</h3>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>UI/UX</h3>
+                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>Digital Marketing</h3>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>Communication</h3>
+                <div class="progress-bar"><div class="progress" style="width: 65%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Quiz Section -->
+    <section id="quiz" class="section">
+        <h2>Career Quiz</h2>
+        <div id="quiz-container">
+            <div class="quiz-progress-container">
+                <div class="quiz-progress-bar">
+                    <div class="quiz-progress" id="quiz-progress"></div>
+                </div>
+                <div class="quiz-progress-text"><span id="current-question-num">1</span> / <span id="total-questions">10</span></div>
+            </div>
+            <div id="question">What interests you most?</div>
+            <div id="options">
+                <button class="option" data-value="tech">Technology and Innovation</button>
+                <button class="option" data-value="creative">Creativity and Design</button>
+                <button class="option" data-value="people">Helping People</button>
+                <button class="option" data-value="business">Business and Strategy</button>
+            </div>
+            <div class="quiz-feedback" id="quiz-feedback"></div>
+            <div class="quiz-buttons">
+                <button id="next-btn">Next</button>
+                <button id="retake-btn" onclick="resetQuiz()">Retake Quiz</button>
+            </div>
+           
+        </div>
+        
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Career Treke</h2>
+        <p>Career Treke is a platform designed to guide students and freshers in exploring career paths, acquiring essential skills, and planning their future. Our mission is to empower individuals with knowledge and tools for informed decisions. Our vision is a world where everyone finds fulfilling careers aligned with their passions.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="form-success" class="hidden">
+            <h3>Thank You!</h3>
+            <p>Your message has been sent successfully. We'll get back to you soon.</p>
+        </div>
+    </section>
+
+    <!-- Scroll-to-Top Button -->
+    <button id="scroll-top" class="hidden">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Career Path - Career Treke</title>
+
+<style>
+:root{
+    --primary-color:#0ea5e9;
+    --accent-color:#0369a1;
+    --card-bg:#ffffff;
+    --bg-color:#f0f9ff;
+    --text-color:#1f2937;
+    --shadow:rgba(0,0,0,0.08);
+}
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:var(--bg-color);
+    color:var(--text-color);
+}
+
+/* Navbar */
+nav{
+    background:white;
+    padding:15px 40px;
+    box-shadow:0 2px 10px var(--shadow);
+}
+
+.logo{
+    margin:0;
+    color:var(--primary-color);
+}
+
+/* Page Layout */
+.career-page{
+    padding:60px 20px;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* Back Button */
+.back-btn{
+    display:inline-block;
+    margin-bottom:30px;
+    padding:10px 20px;
+    background:var(--primary-color);
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#0369a1;
+}
+
+/* Hero Section */
+.career-hero{
+    text-align:center;
+    background:linear-gradient(135deg, #0ea5e9, #0369a1);
+    color:white;
+    padding:30px 25px;
+    border-radius:12px;
+    margin-bottom:40px;
+}
+
+.hero-img{
+    width:100%;
+    max-height:320px;
+    object-fit:cover;
+    border-radius:12px;
+    margin-bottom:25px;
+}
+
+/* Quote Box */
+.quote-box{
+    margin-top:20px;
+    padding:20px;
+    background:#e0e7ff;
+    border-left:5px solid var(--primary-color);
+    border-radius:8px;
+    font-style:italic;
+    color:black;
+}
+
+/* Roadmap */
+.section-title{
+    margin-bottom:20px;
+}
+
+.roadmap-container{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.roadmap-item{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+    background:var(--card-bg);
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px var(--shadow);
+    border-left:6px solid var(--primary-color);
+    transition:0.3s;
+}
+
+.roadmap-item:hover{
+    transform:translateX(10px);
+}
+
+.step-badge{
+    background:var(--primary-color);
+    color:white;
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+}
+
+.step-img{
+    width:85px;
+    height:85px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.step-details h3{
+    margin:0 0 8px;
+}
+
+.step-details p{
+    margin:0;
+    line-height:1.7;
+    opacity:0.9;
+}
+
+/* Skills Section */
+.skills-needed{
+    margin-top:50px;
+    padding:30px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 12px var(--shadow);
+}
+
+.skills-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:15px;
+}
+
+.skill-tag{
+    padding:8px 16px;
+    border-radius:25px;
+    border:1px solid var(--primary-color);
+    font-size:0.9rem;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .roadmap-item{
+        flex-direction:column;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1 class="logo">Career Treke</h1>
+</nav>
+
+<div class="career-page">
+
+<a href="index.html" class="back-btn">← Back to Career Paths</a>
+
+<div class="career-hero">
+    <h1>Information Technology (IT) Career Path</h1>
+    <img src="images/it-hero.jpg" alt="IT Career" class="hero-img">
+    <p>
+        Information Technology focuses on building, managing, and securing digital systems. 
+        IT professionals develop software, manage networks, analyze data, and protect 
+        organizations from cyber threats in an increasingly digital world.
+    </p>
+
+    <div class="quote-box">
+        “Technology shapes the future, and IT professionals build it.”
+    </div>
+</div>
+
+<h2 class="section-title">Your IT Career Roadmap</h2>
+
+<div class="roadmap-container">
+
+<div class="roadmap-item">
+    <div class="step-badge">1</div>
+    <img src="images/it-school.jpg" class="step-img">
+    <div class="step-details">
+        <h3>Academic Foundation (School Level)</h3>
+        <p>
+            Focus on Mathematics, Computer Science, and logical reasoning. 
+            Participate in coding competitions, tech clubs, and basic programming 
+            to build a strong digital foundation.
+        </p>
+    </div>
+</div>
+
+<div class="roadmap-item">
+    <div class="step-badge">2</div>
+    <img src="images/it-degree.jpg" class="step-img">
+    <div class="step-details">
+        <h3>Undergraduate Degree in IT/CS</h3>
+        <p>
+            Pursue B.Tech, B.Sc, or BCA in Information Technology or Computer Science. 
+            Learn programming, databases, networking, cybersecurity, and software development.
+        </p>
+    </div>
+</div>
+
+<div class="roadmap-item">
+    <div class="step-badge">3</div>
+    <img src="images/it-internship.jpg" class="step-img">
+    <div class="step-details">
+        <h3>Internships & Practical Experience</h3>
+        <p>
+            Gain hands-on experience through internships in software companies 
+            or IT departments. Work on real-world projects, debugging, testing, 
+            and team collaboration.
+        </p>
+    </div>
+</div>
+
+<div class="roadmap-item">
+    <div class="step-badge">4</div>
+    <img src="images/it-job.jpg" class="step-img">
+    <div class="step-details">
+        <h3>Entry-Level IT Role</h3>
+        <p>
+            Start as a software developer, system administrator, IT support specialist, 
+            or data analyst. Build technical expertise and understand industry tools and workflows.
+        </p>
+    </div>
+</div>
+
+<div class="roadmap-item">
+    <div class="step-badge">5</div>
+    <img src="images/it-certification.jpg" class="step-img">
+    <div class="step-details">
+        <h3>Advanced Skills & Certifications</h3>
+        <p>
+            Earn certifications in Cloud Computing, Cybersecurity, Data Science, 
+            DevOps, or Artificial Intelligence to enhance career growth and specialization.
+        </p>
+    </div>
+</div>
+
+<div class="roadmap-item">
+    <div class="step-badge">6</div>
+    <img src="images/it-leadership.jpg" class="step-img">
+    <div class="step-details">
+        <h3>Leadership & Innovation</h3>
+        <p>
+            Advance to senior roles such as IT Manager, Solution Architect, 
+            Cybersecurity Expert, or Tech Entrepreneur. Lead digital transformation 
+            and innovation initiatives.
+        </p>
+    </div>
+</div>
+
+</div>
+
+<div class="skills-needed">
+<h3>Core Competencies for IT Professionals</h3>
+<div class="skills-list">
+<span class="skill-tag">Programming</span>
+<span class="skill-tag">Problem Solving</span>
+<span class="skill-tag">Database Management</span>
+<span class="skill-tag">Cybersecurity</span>
+<span class="skill-tag">Cloud Computing</span>
+<span class="skill-tag">Networking</span>
+<span class="skill-tag">Data Analysis</span>
+<span class="skill-tag">Critical Thinking</span>
+<span class="skill-tag">Team Collaboration</span>
+<span class="skill-tag">Adaptability</span>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>
